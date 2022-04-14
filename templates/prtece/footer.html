@@ -1,0 +1,41 @@
+<!-- footer -->
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenar">
+        
+            <footer id="fot">
+                <div class="media">
+                    <li><a href="{{pro.facebook}}" target="_blank"><span id="blue"><i class="fa-brands fa-facebook"></i></span></a></li>
+                    <div class="hh"><h3>Facebook</h3></div>
+                    <li><a href="{{pro.gmail}}" target="_black"><span id="red"><i class="fa-brands fa-google-plus-g"></i></span></a></li>
+                    <div class="hh"><h3>Gmail</h3></div>
+                    <li><a href={{pro.twitter}} target="_blank"><span id="blue"><i class="fa-brands fa-twitter"></i></span></a></li>
+                    <div class="hh"><h3>Twitter</h3></div>
+                </div>
+                <div class="tx">
+                    
+                    <form method="post">
+                        {% csrf_token %}
+                            {{lf}}
+                        <div class="btn23"><input type="submit" value="save"></div>
+                    </form>
+                </div>
+                <div class="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103040.36623093883!2d5.349786792150798!3d36.19060349926969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f3159cb038214b%3A0xf0679540a61fb1b6!2sFontaine%20d&#39;Ain%20El%20Fouara!5e0!3m2!1sfr!2sdz!4v1649354643464!5m2!1sfr!2sdz" id="mapse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="footer">Pages-Boussba-Dhirar &copy; -2022-</div>
+            </footer>
+        <div class="crearfix"></div>
+    </div>
+    <script src="{% static 'main/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'main/javascripts.js' %}"></script>
+</body>
+</html>

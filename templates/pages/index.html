@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <title>pages-Dhirar</title>
+</head>
+{% block content %}
+<body>
+    <!-- start section img + URL + parigraf -->
+    <section id="s1">
+        <div class="contener">
+
+            <!-- images in css  -->
+            <div class="fix">
+                <div class="img"><img src="{% static './imges/j.jfif' %}" alt="imges" draggable="false"></div>
+                <div class="h03"><h1>Boussba-Dhirar</h1></div>
+                <div class="p03"><p>ladresse : xx/xx/xx /rue kamle..... <br>
+                    Permis de conduire : (B) <br>
+                    Nom : Boussba / Prénom : Dhirar <br>
+                    date de naissance : **/**/** => 30 N <br>
+                    GMAIL : ridaridatorino12@gmail.com
+                    Téléphone : +213660855152 <br>
+                    wilaya : Sétif
+                    
+                </p></div>
+                <div id="fle"><i class="fa-solid fa-chevron-down"></i></div> <!--id = fle | سهم الى الاسفل-->
+            </div>
+
+            <div class="crearfix"></div>
+        </div>
+    </section>
+    <!-- End section1 imge + URL + PARIGRAF -->
+
+    <!-- SECTION S2 -->
+    <section id="s2">
+        <div class="contener">
+            <div class="h0">
+                <h1>Langue</h1>
+            </div>
+            <div class="p0">
+                <p>*arabe : lu , écrit , parlé <br>
+                    *Francais : lu , écrit , parlé (moyen) <br>
+                    *Anglais : lu, écrit parlé (bien)</p>
+            </div>
+            <div class="crearfix"></div>
+        </div>
+    </section>
+    <!-- END SECTION S2 -->
+
+    <!-- SECTION S3 -->
+    <section id="s3">
+        <div class="contener">
+            <!-- imge in css -->
+            <div class="right">
+                <div class="h01">
+                    <h1>Experience :</h1>
+                </div>
+                <div class="p01">
+                    <p>-J'ai une expérience comme un opérateur pendoant 5 ans -ma carriére a été améliorée commen nu agent maintenance + {chef d'neté}
+                    </p>
+                </div>
+                <div class="btn0"><li><a href="#">Lern-up</a></li></div>
+                
+            </div>
+            <div id="fle1"><i class="fa-solid fa-chevron-down"></i></div> <!--id = fle | سهم الى الاسفل-->
+            <div class="crearfix"></div>
+        </div>
+    </section>
+    <!-- END SECTION S3 -->
+
+    <!-- section s4 -->
+
+    <section id="s4">
+        <div class="contener">
+            <div class="left">
+                <div class="h02">
+                    <h1>Competences :</h1>
+                </div>
+                <div class="p02">
+                    <p>-Je métrese l'outil informatique {Word,Excel,power point, programation(HTML-CSS-DJANGO PYTHON)}
+                    </p>
+                </div>
+                <div class="btn1"><li><a href="#">Lern-up</a></li></div>
+            </div>
+            <div id="fle2"><i class="fa-solid fa-chevron-down"></i></div> <!--id = fle | سهم الى الاسفل-->
+            <div class="crearfix"></div>
+        </div>
+    </section>
+    <!-- end section S4 -->
+
+    <!-- SECTION s5 -->
+    <section id="s5">
+        <div class="contener">
+            <div class="vid">
+                <video src="{% static './vidios/Red - 91074.mp4' %}" autoplay muted loop></video>
+            </div>
+            <div class="spa">
+                <span>D</span>
+                <span>H</span>
+                <span>I</span>
+                <span>R</span>
+                <span>A</span>
+                <span>R</span>
+            </div>
+            <div class="crearfix"></div>
+        </div>
+    </section>
+    <!-- END SECTION s5 -->
+
+    
+</body>
+{% endblock content %}
+</html>
+
